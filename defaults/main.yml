@@ -11,7 +11,7 @@ apt_sources_debian_components:
 apt_sources_debian_distribution: "{{ ansible_distribution_release }}"
 apt_sources_debian_repository_url: http://deb.debian.org
 apt_sources_debian_debug_repository_url: http://debug.mirrors.debian.org
-apt_sources_enable_backports: true
+apt_sources_enable_backports: false
 apt_sources_enable_proposed: false
 apt_sources_enable_security: true
 apt_sources_enable_updates: true
@@ -20,7 +20,7 @@ apt_sources_enable_debug: false
 # Specific to Ubuntu
 apt_sources_ubuntu_components:
   - main
-  - multiverse
-  - restricted
-  - universe
+#  - multiverse
+#  - restricted
+#  - universe
 apt_sources_ubuntu_repository_url: http://archive.ubuntu.com

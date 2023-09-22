@@ -4,11 +4,6 @@
   become: true
   any_errors_fatal: true
 
-  tasks:
-    - name: Include role
-      ansible.builtin.include_role:
-        name: ansible-system_apt_sources
-
   vars:
     apt_sources_debian_components:
       - main
@@ -17,3 +12,8 @@
     apt_sources_ubuntu_components:
       - main
       - multiverse
+
+  tasks:
+    - name: Include role
+      ansible.builtin.include_role:
+        name: ansible-system_apt_sources

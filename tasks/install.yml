@@ -5,3 +5,7 @@
     dest: /etc/apt/sources.list
     mode: '0644'
   notify: Updating apt cache
+
+- name: "Include release change"
+  ansible.builtin.include_tasks: release_change.yml
+  when: apt_sources_remove_release_change_alert | bool

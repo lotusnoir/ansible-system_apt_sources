@@ -31,6 +31,7 @@ none
 See [variables](/defaults/main.yml) for more details.
 
 With default variables, this role keep original settings. You need to set the config variables like in the exemple in order to start configuration.
+You can also remove the release changes alerts.
 
 ## Examples
 
@@ -51,6 +52,7 @@ With default variables, this role keep original settings. You need to set the co
             apt_sources_enable_proposed: false
             apt_sources_enable_security: true
             apt_sources_enable_updates: true
+            apt_sources_remove_release_change_alert: true
 
 
 

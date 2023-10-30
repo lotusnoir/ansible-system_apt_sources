@@ -5,13 +5,9 @@
   any_errors_fatal: true
 
   vars:
-    apt_sources_debian_components:
-      - main
-      - contrib
-      - non-free
-    apt_sources_ubuntu_components:
-      - main
-      - multiverse
+    apt_sources_debian_components: ["main", "contrib", "non-free"]
+    apt_sources_ubuntu_components: ["main", "multiverse"]
+    apt_sources_remove_release_change_alert: true
 
   tasks:
     - name: Include role

@@ -9,3 +9,7 @@
 - name: "Include release change"
   ansible.builtin.include_tasks: release_change.yml
   when: apt_sources_remove_release_change_alert | bool
+
+- name: "Include non-free firware alert"
+  ansible.builtin.include_tasks: bookworm_firmware.yml
+  when: apt_sources_remove_bookworm_firmare_alert | bool

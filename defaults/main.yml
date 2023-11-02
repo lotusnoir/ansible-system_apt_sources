@@ -26,3 +26,4 @@ apt_sources_ubuntu_components:
 apt_sources_ubuntu_repository_url: http://archive.ubuntu.com
 
 apt_sources_remove_release_change_alert: false
+apt_sources_remove_bookworm_firmare_alert: false

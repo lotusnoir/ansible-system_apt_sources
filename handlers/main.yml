@@ -2,3 +2,7 @@
 - name: "Updating apt cache"
   ansible.builtin.apt:
     update_cache: true
+  register: pkg_result
+  retries: 12
+  delay: 10
+  until: pkg_result is success

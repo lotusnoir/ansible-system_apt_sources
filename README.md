@@ -31,7 +31,7 @@ none
 See [variables](/defaults/main.yml) for more details.
 
 With default variables, this role keep original settings. You need to set the config variables like in the exemple in order to start configuration.
-You can also remove the release changes alerts.
+You can also remove the release changes alerts, disable the cache or avoid that the package install des man/doc associated or specific traduction only.
 
 ## Examples
 
@@ -53,6 +53,11 @@ You can also remove the release changes alerts.
             apt_sources_enable_security: true
             apt_sources_enable_updates: true
             apt_sources_remove_release_change_alert: true
+            apt_sources_exclude_man: true
+            apt_sources_include_locales:
+              - fr
+              - en
+            apt_sources_disable_caches: true
 
 
 

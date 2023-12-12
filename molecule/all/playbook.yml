@@ -8,6 +8,11 @@
     apt_sources_debian_components: ["main", "contrib", "non-free"]
     apt_sources_ubuntu_components: ["main", "multiverse"]
     apt_sources_remove_release_change_alert: true
+    apt_sources_exclude_man: false
+    apt_sources_include_locales:
+      - fr
+      - en
+    apt_sources_disable_caches: true
 
   tasks:
     - name: Include role

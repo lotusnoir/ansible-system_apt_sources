@@ -13,6 +13,8 @@
       - fr
       - en
     apt_sources_disable_caches: true
+    apt_sources_compress_indexes: true
+    apt_sources_ignore_additional: true
 
   tasks:
     - name: Include role

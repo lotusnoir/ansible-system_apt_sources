@@ -14,7 +14,6 @@
 - name: Update apt cache
   ansible.builtin.apt:
     update_cache: true
-    cache_valid_time: 86400
   register: pkg_result
   retries: 12
   delay: 10

@@ -10,6 +10,10 @@
 - name: Allow release-info to change for APT repositories
   ansible.builtin.command: apt-get update -y --allow-releaseinfo-change
   changed_when: false
+  register: pkg_result
+  retries: 12
+  delay: 10
+  until: pkg_result is success
 
 - name: Update apt cache
   ansible.builtin.apt:

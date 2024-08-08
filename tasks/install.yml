@@ -42,7 +42,7 @@
     mode: '0644'
   when: apt_sources_ignore_additional | bool
 
-- name: "Ignore additional or suggested packages"
+- name: "Force connection with ipv4"
   ansible.builtin.template:
     src: templates/force-ipv4.j2
     dest: /etc/apt/apt.conf.d/99_force-ipv4

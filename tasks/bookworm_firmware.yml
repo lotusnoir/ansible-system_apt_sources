@@ -5,4 +5,4 @@
     state: present
     create: true
     line: APT::Get::Update::SourceListWarnings::NonFreeFirmware "false";
-    mode: 0644
+    mode: '0644'

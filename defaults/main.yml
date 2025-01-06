@@ -38,3 +38,4 @@ apt_sources_disable_caches: false
 apt_sources_compress_indexes: false
 apt_sources_ignore_additional: false
 apt_sources_force_ipv4: false
+apt_sources_auto_update: false

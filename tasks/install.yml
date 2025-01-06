@@ -48,3 +48,10 @@
     dest: /etc/apt/apt.conf.d/99_force-ipv4
     mode: '0644'
   when: apt_sources_force_ipv4 | bool
+
+- name: "Add periodic apt update"
+  ansible.builtin.template:
+    src: templates/auto_update.j2
+    dest: /etc/apt/apt.conf.d/99_auto_update
+    mode: '0644'
+  when: apt_sources_auto_update | bool

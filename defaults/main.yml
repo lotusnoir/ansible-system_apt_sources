@@ -3,6 +3,8 @@ apt_sources_archive_types:
   - deb
   - deb-src
 
+apt_sources_update_cache: true
+
 # Specific to Debian
 apt_sources_debian_components:
   - main

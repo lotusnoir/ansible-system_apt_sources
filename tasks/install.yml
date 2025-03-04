@@ -4,7 +4,6 @@
     src: sources.list.j2
     dest: /etc/apt/sources.list
     mode: "0644"
-  notify: Updating apt cache
 
 - name: "Allow release change"
   ansible.builtin.template:

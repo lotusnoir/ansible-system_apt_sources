@@ -27,15 +27,16 @@ apt_sources_ubuntu_components:
 #  - universe
 apt_sources_ubuntu_repository_url: http://archive.ubuntu.com
 
+### Config.d
 # bypass update errors
 apt_sources_remove_release_change_alert: false
 apt_sources_remove_bookworm_firmare_alert: false
-
 # Reduce diskfootprint
 apt_sources_exclude_man: false
 apt_sources_include_locales: []
 #    - fr
 #    - en
+
 apt_sources_disable_caches: false
 apt_sources_compress_indexes: false
 apt_sources_ignore_additional: false

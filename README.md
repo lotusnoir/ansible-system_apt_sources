@@ -22,6 +22,7 @@
 ## Description
 
 Configures /etc/apt/sources.list
+
 ## Requirements
 
 none
@@ -58,7 +59,6 @@ You can also remove the release changes alerts, disable the cache or avoid that 
               - fr
               - en
             apt_sources_disable_caches: true
-
 
 
 ## License

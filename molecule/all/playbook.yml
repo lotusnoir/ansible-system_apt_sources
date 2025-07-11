@@ -3,6 +3,14 @@
   hosts: all
   become: true
   any_errors_fatal: true
+  gather_facts: false
+
+  pre_tasks:
+    - name: Get minimal facts
+      ansible.builtin.setup:
+        gather_subset:
+          - '!all'
+          - distribution
 
   vars:
     apt_sources_debian_components: ["main", "contrib", "non-free"]

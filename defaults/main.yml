@@ -36,7 +36,6 @@ apt_sources_exclude_man: false
 apt_sources_include_locales: []
 #    - fr
 #    - en
-
 apt_sources_disable_caches: false
 apt_sources_compress_indexes: false
 apt_sources_ignore_additional: false

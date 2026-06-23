@@ -41,3 +41,4 @@ apt_sources_compress_indexes: false
 apt_sources_ignore_additional: false
 apt_sources_force_ipv4: false
 apt_sources_auto_update: false
+apt_sources_no_backports_kernel: false

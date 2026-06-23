@@ -58,6 +58,19 @@
     mode: "0644"
   when: apt_sources_auto_update | bool
 
+- name: "Enable no_backports_kernel"
+  ansible.builtin.template:
+    src: no_backports_kernel.j2
+    dest: /etc/apt/preferences.d/no-backports-kernel
+    mode: "0644"
+  when: apt_sources_no_backports_kernel | bool
+
+- name: "Disable no_backports_kernel"
+  ansible.builtin.file:
+    path: /etc/apt/preferences.d/no-backports-kernel
+    state: absent
+  when: not apt_sources_no_backports_kernel | bool
+
 - name: "Update apt cache"
   ansible.builtin.apt:
     update_cache: true
